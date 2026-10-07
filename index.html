@@ -4,429 +4,435 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Poonguzhali T — Clinical Psychology Trainee &amp; Counselor</title>
-<meta name="description" content="M.Sc Clinical Psychology student and counselor with clinical internship training in hospital and de-addiction settings. Case history, MSE, CBT, psychoeducation.">
+<meta name="description" content="Poonguzhali T — M.Sc Clinical Psychology trainee and counselor. Supervised clinical training in hospital and de-addiction settings; case history, Mental Status Examination, CBT and psychoeducation.">
 <meta property="og:title" content="Poonguzhali T — Clinical Psychology Trainee &amp; Counselor">
-<meta property="og:description" content="M.Sc Clinical Psychology student with counseling experience and supervised clinical internships in hospital and de-addiction settings.">
+<meta property="og:description" content="Listening with empathy, caring with evidence. M.Sc Clinical Psychology trainee with counseling and supervised clinical experience.">
 <meta property="og:type" content="website">
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+<meta property="og:url" content="https://poonguzhalit2005.github.io/">
+<meta property="og:image" content="https://poonguzhalit2005.github.io/assets/banner.png">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='32' fill='%231d5f68'/%3E%3Ctext x='32' y='42' font-family='Georgia' font-size='28' font-weight='700' fill='%23f7f4ee' text-anchor='middle'%3EPT%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 <style>
 :root{
-  --ink:#122329;--ink2:#3a4a50;--ink3:#6a7a80;
-  --paper:#f8faf9;--white:#ffffff;
-  --rule:#e1e8e7;--rule2:#cdd8d6;
-  --teal:#1f5f6b;--teal-bg:#ecf4f4;
-  --sage:#3f7a5a;--sage-bg:#eff7f1;
-  --gold:#8a5d12;--gold-bg:#fdf8ec;
-  --surface:#f1f5f4;
-  --r:4px;--rlg:8px;
+  --ivory:#f7f4ee; --paper:#fbfaf6; --white:#ffffff;
+  --ink:#13363f; --ink2:#3d5359; --ink3:#6b7f84;
+  --teal:#1d5f68; --teal-d:#174a52; --teal-bg:#e7f0ef;
+  --sage:#7fa695; --sage-bg:#eef4f0;
+  --gold:#d9a24a; --gold-bg:#fbf3e3;
+  --terra:#b4472f;
+  --rule:#e4e2da;
+  --r:6px; --rl:14px;
+  --serif:'Fraunces', Georgia, serif;
+  --sans:'Inter', 'Segoe UI', sans-serif;
 }
-*,*::before,*::after{margin:0;padding:0;box-sizing:border-box;}
-html{scroll-behavior:smooth;}
-body{background:var(--paper);color:var(--ink);font-family:'Inter',sans-serif;font-weight:400;line-height:1.7;overflow-x:hidden;}
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{background:var(--paper);color:var(--ink);font-family:var(--sans);font-size:16px;line-height:1.7;overflow-x:hidden}
+img{max-width:100%;display:block}
+a{color:inherit}
+.wrap{max-width:1120px;margin:0 auto;padding:0 24px}
 
 /* NAV */
-nav{position:fixed;top:0;left:0;right:0;z-index:200;background:rgba(248,250,249,0.93);backdrop-filter:blur(12px);border-bottom:1px solid var(--rule);padding:0 6%;display:flex;align-items:center;justify-content:space-between;height:60px;transition:box-shadow .3s;}
-nav.shadow{box-shadow:0 1px 24px rgba(0,0,0,.06);}
-.nav-brand{font-family:'Playfair Display',serif;font-size:1.05rem;font-weight:700;color:var(--ink);text-decoration:none;}
-.nav-links{display:flex;gap:28px;align-items:center;}
-.nav-links a{font-size:.82rem;font-weight:500;letter-spacing:.4px;color:var(--ink3);text-decoration:none;text-transform:uppercase;transition:color .2s;}
-.nav-links a:hover{color:var(--ink);}
-.nav-cta{background:var(--teal)!important;color:var(--white)!important;padding:7px 18px;border-radius:var(--r);}
-.hamburger{display:none;cursor:pointer;flex-direction:column;gap:5px;background:none;border:0;padding:6px;}
-.hamburger span{width:22px;height:1.5px;background:var(--ink);border-radius:2px;}
-@media(max-width:768px){
-  .hamburger{display:flex;}
-  .nav-links{display:none;position:absolute;top:60px;left:0;right:0;background:var(--white);border-bottom:1px solid var(--rule);flex-direction:column;align-items:flex-start;padding:20px 6%;gap:16px;}
-  .nav-links.open{display:flex;}
+nav{position:fixed;inset:0 0 auto 0;z-index:100;background:rgba(251,250,246,.9);backdrop-filter:blur(12px);border-bottom:1px solid transparent;transition:border-color .3s,box-shadow .3s}
+nav.scrolled{border-color:var(--rule);box-shadow:0 2px 20px rgba(19,54,63,.05)}
+.nav-in{max-width:1120px;margin:0 auto;padding:0 24px;height:68px;display:flex;align-items:center;justify-content:space-between}
+.brand{display:flex;align-items:center;gap:10px;text-decoration:none}
+.brand-mark{width:34px;height:34px;border-radius:50%;background:var(--teal);color:var(--ivory);display:grid;place-items:center;font-family:var(--serif);font-weight:700;font-size:14px}
+.brand-name{font-family:var(--serif);font-weight:600;font-size:18px;color:var(--ink)}
+.links{display:flex;gap:28px;align-items:center}
+.links a{text-decoration:none;font-size:14px;font-weight:500;color:var(--ink2);transition:color .2s}
+.links a:hover{color:var(--teal)}
+.links .cta{background:var(--teal);color:#fff;padding:9px 18px;border-radius:999px}
+.links .cta:hover{background:var(--teal-d);color:#fff}
+.burger{display:none;background:none;border:0;cursor:pointer;padding:8px}
+.burger span{display:block;width:22px;height:2px;background:var(--ink);margin:4px 0;border-radius:2px}
+@media(max-width:860px){
+  .burger{display:block}
+  .links{display:none;position:absolute;top:68px;left:0;right:0;flex-direction:column;align-items:flex-start;gap:16px;background:var(--paper);padding:20px 24px;border-bottom:1px solid var(--rule)}
+  .links.open{display:flex}
 }
-
-.wrap{max-width:1080px;margin:0 auto;padding:0 6%;}
 
 /* HERO */
-.hero{padding:140px 6% 100px;max-width:1080px;margin:0 auto;display:grid;grid-template-columns:1fr auto;gap:80px;align-items:center;}
-.hero-eyebrow{display:inline-flex;align-items:center;gap:8px;font-size:.75rem;font-weight:500;letter-spacing:2px;text-transform:uppercase;color:var(--teal);margin-bottom:20px;}
-.hero-eyebrow::before{content:'';width:24px;height:1px;background:var(--teal);}
-.hero h1{font-family:'Playfair Display',serif;font-size:clamp(2.4rem,4.5vw,3.6rem);font-weight:700;line-height:1.12;color:var(--ink);margin-bottom:20px;letter-spacing:-.5px;}
-.hero h1 em{font-style:normal;color:var(--ink3);}
-.hero-desc{font-size:1rem;color:var(--ink2);max-width:540px;margin-bottom:32px;line-height:1.75;}
-.hero-chips{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:32px;}
-.chip{font-size:.75rem;font-weight:500;padding:4px 12px;border-radius:100px;border:1px solid;letter-spacing:.2px;}
-.chip-teal{background:var(--teal-bg);color:var(--teal);border-color:rgba(31,95,107,.2);}
-.chip-sage{background:var(--sage-bg);color:var(--sage);border-color:rgba(63,122,90,.2);}
-.chip-gold{background:var(--gold-bg);color:var(--gold);border-color:rgba(138,93,18,.2);}
-.chip-gray{background:var(--surface);color:var(--ink2);border-color:var(--rule2);}
-.hero-actions{display:flex;gap:12px;flex-wrap:wrap;}
-.btn-p{background:var(--teal);color:var(--white);padding:11px 26px;border-radius:var(--r);font-size:.88rem;font-weight:500;text-decoration:none;letter-spacing:.2px;transition:background .2s,transform .15s;display:inline-flex;align-items:center;gap:8px;}
-.btn-p:hover{background:var(--ink);transform:translateY(-1px);}
-.btn-o{background:transparent;color:var(--ink);padding:10px 24px;border-radius:var(--r);border:1px solid var(--rule2);font-size:.88rem;font-weight:500;text-decoration:none;letter-spacing:.2px;transition:border-color .2s,background .2s;display:inline-flex;align-items:center;gap:8px;}
-.btn-o:hover{border-color:var(--ink);background:var(--surface);}
-.avatar-block{display:flex;flex-direction:column;align-items:center;gap:20px;}
-.avatar{width:200px;height:250px;border-radius:var(--rlg);background:linear-gradient(160deg,var(--teal-bg),#dbe9e8);border:1px solid var(--rule);display:flex;align-items:center;justify-content:center;font-family:'Playfair Display',serif;font-size:3.6rem;font-weight:700;color:var(--teal);overflow:hidden;}
-.avatar img{width:100%;height:100%;object-fit:cover;object-position:center top;display:block;}
-.stat-row{display:flex;gap:1px;border:1px solid var(--rule);border-radius:var(--rlg);overflow:hidden;}
-.stat{background:var(--white);padding:14px 18px;text-align:center;border-right:1px solid var(--rule);min-width:80px;}
-.stat:last-child{border-right:none;}
-.stat-n{font-size:1.4rem;font-weight:600;color:var(--ink);font-family:'Playfair Display',serif;}
-.stat-l{font-size:.66rem;color:var(--ink3);text-transform:uppercase;letter-spacing:1px;margin-top:2px;}
-@media(max-width:768px){
-  .hero{grid-template-columns:1fr;padding:110px 6% 70px;gap:40px;}
-  .avatar-block{flex-direction:row;justify-content:flex-start;align-items:center;flex-wrap:wrap;}
-  .avatar{width:110px;height:138px;font-size:2.2rem;}
+.hero{position:relative;padding:140px 0 90px;background:
+  radial-gradient(900px 500px at 85% 20%, rgba(127,166,149,.22), transparent 60%),
+  radial-gradient(700px 400px at 0% 100%, rgba(217,162,74,.12), transparent 60%),
+  var(--ivory);overflow:hidden}
+.hero-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:64px;align-items:center}
+.eyebrow{display:inline-flex;align-items:center;gap:10px;font-size:13px;font-weight:600;letter-spacing:2.5px;text-transform:uppercase;color:var(--teal)}
+.eyebrow::before{content:"";width:28px;height:2px;background:var(--gold)}
+.hero h1{font-family:var(--serif);font-weight:600;font-size:clamp(38px,5vw,60px);line-height:1.08;margin:18px 0 22px;letter-spacing:-.5px}
+.hero h1 em{font-style:italic;color:var(--terra)}
+.hero p.lead{font-size:18px;color:var(--ink2);max-width:540px}
+.creds{display:flex;flex-wrap:wrap;gap:10px;margin:26px 0 32px}
+.cred{font-size:13px;font-weight:500;padding:6px 14px;border-radius:999px;background:var(--white);border:1px solid var(--rule);color:var(--ink2)}
+.cred b{color:var(--teal);font-weight:600}
+.actions{display:flex;flex-wrap:wrap;gap:12px}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:13px 24px;border-radius:999px;font-size:15px;font-weight:600;text-decoration:none;transition:transform .15s,background .2s,border-color .2s}
+.btn:hover{transform:translateY(-1px)}
+.btn-p{background:var(--teal);color:#fff}
+.btn-p:hover{background:var(--teal-d)}
+.btn-o{border:1.5px solid var(--ink);color:var(--ink)}
+.btn-o:hover{background:var(--ink);color:#fff}
+
+.portrait{position:relative;justify-self:center;width:min(380px,100%)}
+.portrait::before{content:"";position:absolute;inset:-18px -18px 30px 30px;border-radius:220px 220px 24px 24px;background:var(--sage-bg);border:1px solid #dbe6df;z-index:0}
+.arch{position:relative;z-index:1;border-radius:200px 200px 18px 18px;overflow:hidden;aspect-ratio:4/5;box-shadow:0 30px 60px -25px rgba(19,54,63,.35)}
+.arch img{width:100%;height:100%;object-fit:cover;object-position:50% 18%}
+.badge{position:absolute;z-index:2;left:-34px;bottom:46px;background:var(--white);border-radius:var(--rl);padding:14px 16px;box-shadow:0 14px 30px -12px rgba(19,54,63,.25);display:flex;gap:12px;align-items:center;max-width:250px}
+.badge .dot{width:38px;height:38px;border-radius:50%;background:var(--teal-bg);display:grid;place-items:center;flex:none}
+.badge b{display:block;font-size:14px;color:var(--ink)}
+.badge span{font-size:12px;color:var(--ink3);line-height:1.4;display:block}
+.leaf{position:absolute;right:-30px;top:-40px;opacity:.5;z-index:2}
+@media(max-width:860px){
+  .hero{padding:110px 0 70px}
+  .hero-grid{grid-template-columns:1fr;gap:56px}
+  .portrait{order:-1;width:min(300px,85%)}
+  .badge{left:50%;transform:translateX(-50%);bottom:-34px;width:max-content;max-width:92%}
+  .portrait{margin-bottom:24px}
 }
 
-.divider{border:none;border-top:1px solid var(--rule);}
-.section{padding:80px 0;}
-.sec-label{font-size:.72rem;font-weight:500;letter-spacing:3px;text-transform:uppercase;color:var(--ink3);margin-bottom:10px;}
-.sec-title{font-family:'Playfair Display',serif;font-size:clamp(1.6rem,2.5vw,2rem);font-weight:700;color:var(--ink);margin-bottom:40px;}
-.white-bg{background:var(--white);}
-.surface-bg{background:var(--surface);}
+/* STATS */
+.stats{background:var(--teal);color:#fff}
+.stats .wrap{display:grid;grid-template-columns:repeat(4,1fr);gap:0}
+.stat{padding:30px 18px;text-align:center;border-right:1px solid rgba(255,255,255,.15)}
+.stat:last-child{border-right:0}
+.stat b{display:block;font-family:var(--serif);font-size:34px;font-weight:600;color:#ffd9a0}
+.stat span{font-size:13px;letter-spacing:.5px;color:rgba(255,255,255,.85)}
+@media(max-width:700px){.stats .wrap{grid-template-columns:repeat(2,1fr)}.stat:nth-child(2){border-right:0}.stat:nth-child(-n+2){border-bottom:1px solid rgba(255,255,255,.15)}}
 
-/* SKILLS */
-.skills-table{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));border:1px solid var(--rule);border-radius:var(--rlg);overflow:hidden;}
-.skill-row{padding:22px 24px;border-bottom:1px solid var(--rule);border-right:1px solid var(--rule);background:var(--white);transition:background .2s;}
-.skill-row:hover{background:var(--surface);}
-.skill-cat{font-size:.72rem;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;color:var(--ink3);margin-bottom:10px;display:flex;align-items:center;gap:8px;}
-.skill-cat::before{content:'';width:3px;height:12px;background:var(--teal);border-radius:2px;}
-.skill-tags{display:flex;flex-wrap:wrap;gap:6px;}
-.stag{font-size:.78rem;padding:3px 10px;background:var(--surface);color:var(--ink2);border-radius:var(--r);border:1px solid var(--rule);}
+/* SECTIONS */
+section{padding:96px 0}
+.label{font-size:12px;font-weight:600;letter-spacing:3px;text-transform:uppercase;color:var(--teal);margin-bottom:10px}
+h2{font-family:var(--serif);font-weight:600;font-size:clamp(28px,3.4vw,40px);line-height:1.15;margin-bottom:18px;letter-spacing:-.3px}
+.intro{color:var(--ink2);max-width:640px;margin-bottom:46px;font-size:17px}
+.alt{background:var(--ivory)}
 
-/* EXPERIENCE */
-.exp-stack{display:flex;flex-direction:column;gap:20px;}
-.exp-card{border:1px solid var(--rule);border-radius:var(--rlg);overflow:hidden;background:var(--white);}
-.exp-header{padding:24px 30px;border-bottom:1px solid var(--rule);display:flex;justify-content:space-between;align-items:flex-start;flex-wrap:wrap;gap:14px;}
-.exp-title{font-family:'Playfair Display',serif;font-size:1.2rem;font-weight:700;color:var(--ink);}
-.exp-co{font-size:.9rem;color:var(--ink2);margin-top:4px;}
-.exp-period{font-size:.76rem;font-weight:500;background:var(--teal-bg);color:var(--teal);border:1px solid rgba(31,95,107,.15);padding:5px 14px;border-radius:100px;white-space:nowrap;}
-.exp-body{padding:24px 30px;}
-.exp-list{list-style:none;display:flex;flex-direction:column;gap:10px;}
-.exp-list li{display:flex;gap:14px;font-size:.88rem;color:var(--ink2);line-height:1.65;}
-.exp-list li::before{content:'';width:5px;height:5px;background:var(--teal);border-radius:50%;flex-shrink:0;margin-top:8px;}
-@media(max-width:600px){.exp-header,.exp-body{padding:20px;}}
+/* ABOUT */
+.about-grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:64px;align-items:center}
+.about-img{position:relative}
+.about-img img{border-radius:var(--rl);aspect-ratio:4/5;object-fit:cover;object-position:50% 20%;box-shadow:0 24px 50px -24px rgba(19,54,63,.35)}
+.about-img::after{content:"";position:absolute;right:-16px;bottom:-16px;width:60%;height:60%;border:2px solid var(--gold);border-radius:var(--rl);z-index:-1}
+.about-text p{color:var(--ink2);margin-bottom:16px;font-size:17px}
+.quote{margin-top:26px;padding:20px 24px;border-left:3px solid var(--gold);background:var(--white);border-radius:0 var(--r) var(--r) 0;font-family:var(--serif);font-size:20px;font-style:italic;color:var(--teal-d)}
+@media(max-width:860px){.about-grid{grid-template-columns:1fr;gap:40px}.about-img{max-width:360px}}
 
-/* RESEARCH */
-.research{background:var(--white);border:1px solid var(--rule);border-left:3px solid var(--teal);border-radius:var(--rlg);padding:30px 32px;}
-.research .kicker{font-size:.7rem;font-weight:600;letter-spacing:2px;text-transform:uppercase;color:var(--teal);margin-bottom:8px;}
-.research h3{font-family:'Playfair Display',serif;font-size:1.25rem;color:var(--ink);margin-bottom:12px;line-height:1.35;}
-.research p{font-size:.9rem;color:var(--ink2);}
+/* APPROACH */
+.cards{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+.card{background:var(--white);border:1px solid var(--rule);border-radius:var(--rl);padding:28px 24px;transition:transform .2s,box-shadow .2s}
+.card:hover{transform:translateY(-4px);box-shadow:0 18px 40px -22px rgba(19,54,63,.3)}
+.ic{width:48px;height:48px;border-radius:14px;display:grid;place-items:center;margin-bottom:18px}
+.ic svg{width:24px;height:24px}
+.card h3{font-family:var(--serif);font-weight:600;font-size:20px;margin-bottom:8px}
+.card p{font-size:14.5px;color:var(--ink2);line-height:1.65}
+@media(max-width:980px){.cards{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:560px){.cards{grid-template-columns:1fr}}
 
-/* CARDS */
-.card-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px;}
-.cert-card{background:var(--white);border:1px solid var(--rule);border-radius:var(--rlg);padding:20px 22px;border-left:3px solid var(--sage);transition:transform .2s,box-shadow .2s;}
-.cert-card:hover{transform:translateY(-2px);box-shadow:0 4px 20px rgba(0,0,0,.05);}
-.cert-card .kind{font-size:.66rem;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;color:var(--sage);margin-bottom:6px;}
-.cert-card h5{font-size:.9rem;font-weight:600;color:var(--ink);line-height:1.45;}
+/* FOCUS */
+.focus{display:flex;flex-wrap:wrap;gap:12px}
+.focus span{padding:10px 18px;border-radius:999px;background:var(--white);border:1px solid var(--rule);font-size:15px;color:var(--ink2)}
+.focus span::before{content:"";display:inline-block;width:8px;height:8px;border-radius:50%;background:var(--sage);margin-right:10px;vertical-align:1px}
 
-.comp-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:16px;}
-.comp-card{background:var(--white);border:1px solid var(--rule);border-radius:var(--rlg);padding:22px 24px;}
-.comp-card h5{font-size:.9rem;font-weight:600;color:var(--ink);margin-bottom:6px;}
-.comp-card p{font-size:.83rem;color:var(--ink3);line-height:1.6;}
+/* TIMELINE */
+.tl{position:relative;padding-left:34px}
+.tl::before{content:"";position:absolute;left:9px;top:8px;bottom:8px;width:2px;background:linear-gradient(var(--teal),var(--sage),var(--gold))}
+.ti{position:relative;background:var(--white);border:1px solid var(--rule);border-radius:var(--rl);padding:26px 28px;margin-bottom:22px}
+.ti::before{content:"";position:absolute;left:-32px;top:30px;width:16px;height:16px;border-radius:50%;background:var(--paper);border:3px solid var(--teal)}
+.ti:nth-child(2)::before{border-color:var(--sage)}
+.ti:nth-child(3)::before{border-color:var(--gold)}
+.ti-head{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;margin-bottom:12px}
+.ti h3{font-family:var(--serif);font-weight:600;font-size:21px}
+.ti .org{color:var(--teal);font-weight:600;font-size:15px}
+.ti .org span{color:var(--ink3);font-weight:400}
+.pill{align-self:flex-start;font-size:13px;font-weight:600;padding:5px 12px;border-radius:999px;background:var(--teal-bg);color:var(--teal);white-space:nowrap}
+.ti ul{list-style:none;display:grid;gap:8px}
+.ti li{position:relative;padding-left:20px;color:var(--ink2);font-size:15px}
+.ti li::before{content:"";position:absolute;left:0;top:10px;width:7px;height:7px;border-radius:2px;background:var(--sage);transform:rotate(45deg)}
 
-/* EDUCATION */
-.edu-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:16px;max-width:720px;}
-.edu-card{background:var(--white);border:1px solid var(--rule);border-radius:var(--rlg);padding:22px 24px;}
-.edu-card .degree{font-size:.9rem;font-weight:600;color:var(--ink);margin-bottom:5px;line-height:1.4;}
-.edu-card .college{font-size:.8rem;color:var(--ink3);margin-bottom:14px;line-height:1.5;}
-.edu-meta{display:flex;flex-wrap:wrap;gap:6px;}
-.ec{font-size:.71rem;font-weight:500;padding:3px 9px;border-radius:var(--r);border:1px solid;}
-.ec-year{background:var(--surface);color:var(--ink2);border-color:var(--rule2);}
-.ec-score{background:var(--sage-bg);color:var(--sage);border-color:rgba(63,122,90,.2);}
-.ec-now{background:var(--gold-bg);color:var(--gold);border-color:rgba(138,93,18,.2);}
+/* EDU + RESEARCH */
+.two{display:grid;grid-template-columns:1fr 1fr;gap:24px}
+.box{background:var(--white);border:1px solid var(--rule);border-radius:var(--rl);padding:28px}
+.box h3{font-family:var(--serif);font-weight:600;font-size:20px;margin-bottom:4px}
+.box .sub{color:var(--ink3);font-size:14.5px}
+.box .meta{display:flex;gap:8px;margin-top:14px;flex-wrap:wrap}
+.tag{font-size:12.5px;font-weight:600;padding:4px 11px;border-radius:999px}
+.t-teal{background:var(--teal-bg);color:var(--teal)}
+.t-gold{background:var(--gold-bg);color:#8a5d12}
+.research{margin-top:24px;background:linear-gradient(120deg,var(--teal) 0%,var(--teal-d) 100%);color:#fff;border-radius:var(--rl);padding:36px;position:relative;overflow:hidden}
+.research::after{content:"";position:absolute;right:-60px;top:-60px;width:240px;height:240px;border-radius:50%;border:40px solid rgba(255,255,255,.06)}
+.research .k{font-size:12px;letter-spacing:2.5px;text-transform:uppercase;color:#ffd9a0;font-weight:600}
+.research h3{font-family:var(--serif);font-weight:600;font-size:clamp(22px,2.6vw,28px);margin:10px 0 12px;max-width:760px}
+.research p{color:rgba(255,255,255,.85);max-width:800px}
+@media(max-width:760px){.two{grid-template-columns:1fr}}
+
+/* SKILLS + CERTS */
+.skills{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.sk h4{font-size:13px;letter-spacing:2px;text-transform:uppercase;color:var(--teal);margin-bottom:12px;font-weight:600}
+.sk ul{list-style:none;display:grid;gap:8px}
+.sk li{font-size:15px;color:var(--ink2);padding-left:22px;position:relative}
+.sk li::before{content:"✓";position:absolute;left:0;color:var(--sage);font-weight:700}
+.certs{margin-top:40px;display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:14px}
+.cert{display:flex;gap:12px;align-items:flex-start;background:var(--white);border:1px solid var(--rule);border-radius:var(--r);padding:16px}
+.cert .n{flex:none;width:28px;height:28px;border-radius:50%;background:var(--gold-bg);color:#8a5d12;font-weight:700;font-size:13px;display:grid;place-items:center}
+.cert b{font-size:14.5px;font-weight:600;line-height:1.4}
+@media(max-width:860px){.skills{grid-template-columns:1fr}}
+
+/* BAND */
+.band{position:relative;padding:0;background:var(--ivory)}
+.band img{width:100%;height:auto;max-height:340px;object-fit:cover}
 
 /* CONTACT */
-.ct-bg{background:var(--ink);padding:80px 0;}
-.ct-bg .sec-label{color:rgba(255,255,255,.45);}
-.ct-bg .sec-title{color:var(--white);}
-.ct-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;}
-.ct-card{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.1);border-radius:var(--rlg);padding:18px 20px;text-decoration:none;display:flex;align-items:center;gap:13px;transition:background .2s;min-width:0;}
-.ct-card:hover{background:rgba(255,255,255,.1);}
-.ct-card>div:not(.ct-icon){min-width:0;flex:1 1 auto;}
-.ct-icon{font-size:1.05rem;width:38px;height:38px;background:rgba(255,255,255,.08);border-radius:var(--r);display:flex;align-items:center;justify-content:center;flex-shrink:0;color:rgba(255,255,255,.75);}
-.ct-lbl{font-size:.66rem;color:rgba(255,255,255,.45);text-transform:uppercase;letter-spacing:1px;margin-bottom:3px;}
-.ct-val{font-size:.84rem;font-weight:500;color:rgba(255,255,255,.92);line-height:1.4;overflow-wrap:anywhere;}
+.contact{background:var(--ink);color:#fff}
+.contact h2{color:#fff}
+.contact .intro{color:rgba(255,255,255,.75)}
+.cgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:16px}
+.ccard{display:flex;gap:14px;align-items:center;padding:20px;border-radius:var(--rl);background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.12);text-decoration:none;transition:background .2s}
+a.ccard:hover{background:rgba(255,255,255,.12)}
+.ccard .i{width:42px;height:42px;border-radius:12px;background:rgba(255,217,160,.14);color:#ffd9a0;display:grid;place-items:center;flex:none;font-weight:700}
+.ccard small{display:block;font-size:11px;letter-spacing:1.5px;text-transform:uppercase;color:rgba(255,255,255,.55)}
+.ccard span{font-size:15px;font-weight:500;overflow-wrap:anywhere}
+.note{margin-top:34px;font-size:13px;color:rgba(255,255,255,.5)}
+footer{background:var(--ink);border-top:1px solid rgba(255,255,255,.08);color:rgba(255,255,255,.5);font-size:13px}
+footer .wrap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;padding-top:22px;padding-bottom:22px}
+footer a{color:rgba(255,255,255,.65);text-decoration:none;margin-left:18px}
+footer a:hover{color:#fff}
 
-footer{background:var(--ink);border-top:1px solid rgba(255,255,255,.06);padding:24px 6%;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:10px;}
-.ft{font-size:.82rem;color:rgba(255,255,255,.35);}
-.ft-links{display:flex;gap:20px;}
-.ft-links a{font-size:.78rem;color:rgba(255,255,255,.4);text-decoration:none;transition:color .2s;}
-.ft-links a:hover{color:rgba(255,255,255,.7);}
-
-.fade{opacity:0;transform:translateY(18px);transition:opacity .6s ease,transform .6s ease;}
-.fade.in{opacity:1;transform:none;}
-@media(prefers-reduced-motion:reduce){.fade{opacity:1;transform:none;transition:none;}html{scroll-behavior:auto;}}
+/* reveal */
+.rv{opacity:0;transform:translateY(16px);transition:opacity .7s ease,transform .7s ease}
+.rv.in{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){.rv{opacity:1;transform:none;transition:none}html{scroll-behavior:auto}}
 </style>
 </head>
 <body>
 
 <nav id="nav">
-  <a class="nav-brand" href="#">Poonguzhali T</a>
-  <button class="hamburger" aria-label="Menu" onclick="document.querySelector('.nav-links').classList.toggle('open')">
-    <span></span><span></span><span></span>
-  </button>
-  <div class="nav-links">
-    <a href="#experience">Experience</a>
-    <a href="#research">Research</a>
-    <a href="#skills">Skills</a>
-    <a href="#education">Education</a>
-    <a href="#contact" class="nav-cta">Contact</a>
+  <div class="nav-in">
+    <a class="brand" href="#top"><span class="brand-mark">PT</span><span class="brand-name">Poonguzhali T</span></a>
+    <button class="burger" aria-label="Menu" onclick="document.querySelector('.links').classList.toggle('open')"><span></span><span></span><span></span></button>
+    <div class="links">
+      <a href="#about">About</a>
+      <a href="#approach">Approach</a>
+      <a href="#experience">Experience</a>
+      <a href="#education">Education</a>
+      <a href="#skills">Skills</a>
+      <a href="#contact" class="cta">Get in touch</a>
+    </div>
   </div>
 </nav>
 
-<div class="hero" id="about">
-  <div>
-    <p class="hero-eyebrow">Clinical Psychology Trainee · Counselor</p>
-    <h1>Poonguzhali T<br><em>Evidence-based,<br>compassionate care</em></h1>
-    <p class="hero-desc">M.Sc Clinical Psychology student at Rathinam Arts and Science College with hands-on counseling experience in a therapy and rehabilitation centre and supervised clinical internships in hospital and de-addiction settings. Trained in case history taking, Mental Status Examination, psychoeducation and CBT-informed counseling.</p>
-    <div class="hero-chips">
-      <span class="chip chip-teal">M.Sc Clinical Psychology · 2025–2027</span>
-      <span class="chip chip-sage">CBT · Supportive Counseling</span>
-      <span class="chip chip-gray">Erode, Tamil Nadu</span>
+<header class="hero" id="top">
+  <div class="wrap hero-grid">
+    <div>
+      <p class="eyebrow">Clinical Psychology Trainee · Counselor</p>
+      <h1>Listening with empathy,<br>caring with <em>evidence</em>.</h1>
+      <p class="lead">I'm Poonguzhali, an M.Sc Clinical Psychology trainee with counseling experience in a therapy and rehabilitation centre and supervised clinical training in hospital and de-addiction settings.</p>
+      <div class="creds">
+        <span class="cred"><b>M.Sc</b> Clinical Psychology · 2025–2027</span>
+        <span class="cred"><b>B.Sc</b> Psychology · 73%</span>
+        <span class="cred">Coimbatore · Erode · Remote</span>
+      </div>
+      <div class="actions">
+        <a class="btn btn-p" href="#contact">Get in touch</a>
+        <a class="btn btn-o" href="Poonguzhali_T_Resume.pdf" download>Download resume</a>
+      </div>
     </div>
-    <div class="hero-actions">
-      <a href="mailto:poonguhalitpschology@gmail.com" class="btn-p">✉ Get in touch</a>
-      <a href="Poonguzhali_T_Resume.pdf" download class="btn-o">↓ Download resume</a>
+    <div class="portrait">
+      <svg class="leaf" width="90" height="110" viewBox="0 0 300 320" fill="none" stroke="#1d5f68" stroke-width="5" stroke-linecap="round" aria-hidden="true">
+        <path d="M150 310 C150 230 150 150 150 40"/><path d="M150 260 C110 250 70 220 60 170 C105 175 140 205 150 260Z"/>
+        <path d="M150 210 C190 200 230 170 240 120 C195 125 160 155 150 210Z"/><path d="M150 160 C115 150 85 125 78 85 C115 90 143 115 150 160Z"/>
+        <path d="M150 115 C180 105 205 82 212 50 C178 55 155 78 150 115Z"/><path d="M150 60 C140 45 140 25 150 10 C160 25 160 45 150 60Z"/>
+      </svg>
+      <div class="arch"><img src="assets/portrait.jpg" alt="Portrait of Poonguzhali T"></div>
+      <div class="badge">
+        <div class="dot"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#1d5f68" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1-1.1a5.5 5.5 0 0 0-7.8 7.8l1 1.1L12 21l7.8-7.5 1-1.1a5.5 5.5 0 0 0 0-7.8z"/></svg></div>
+        <div><b>Supervised clinical training</b><span>Hospital &amp; de-addiction settings</span></div>
+      </div>
     </div>
   </div>
-  <div class="avatar-block">
-    <div class="avatar" aria-hidden="true">PT</div>
-    <div class="stat-row">
-      <div class="stat"><div class="stat-n">2</div><div class="stat-l">Internships</div></div>
-      <div class="stat"><div class="stat-n">1</div><div class="stat-l">Counselor Role</div></div>
-      <div class="stat"><div class="stat-n">5</div><div class="stat-l">Workshops</div></div>
-    </div>
+</header>
+
+<div class="stats">
+  <div class="wrap">
+    <div class="stat"><b>3</b><span>Clinical &amp; counseling placements</span></div>
+    <div class="stat"><b>4</b><span>Therapeutic approaches</span></div>
+    <div class="stat"><b>5</b><span>Workshops &amp; certifications</span></div>
+    <div class="stat"><b>1</b><span>Research dissertation</span></div>
   </div>
 </div>
 
-<hr class="divider">
+<section id="about">
+  <div class="wrap about-grid">
+    <div class="about-img rv"><img src="assets/about.jpg" alt="Poonguzhali T seated outdoors" loading="lazy"></div>
+    <div class="about-text rv">
+      <p class="label">About me</p>
+      <h2>A calm, respectful space to be heard</h2>
+      <p>I am an empathetic and ethically grounded M.Sc Clinical Psychology student at Rathinam Global University, Coimbatore. My training has taken me into a therapy and rehabilitation centre, a psychiatric hospital and a de-addiction clinic, where I learned to take careful case histories, conduct Mental Status Examinations and support patients and families through psychoeducation.</p>
+      <p>I believe good care starts with listening — and is strengthened by structured assessment and evidence-based methods such as CBT. I'm working toward becoming a licensed Clinical Psychologist.</p>
+      <div class="quote">"Every person deserves to be understood before they are helped."</div>
+    </div>
+  </div>
+</section>
 
-<!-- EXPERIENCE -->
-<section class="section white-bg" id="experience">
+<section id="approach" class="alt">
   <div class="wrap">
-    <p class="sec-label">Clinical Practice</p>
-    <p class="sec-title">Experience &amp; Internships</p>
-    <div class="exp-stack">
-      <div class="exp-card fade">
-        <div class="exp-header">
-          <div>
-            <div class="exp-title">Counselor</div>
-            <div class="exp-co">Smile Home Therapy and Rehab Center &nbsp;·&nbsp; Coimbatore</div>
-          </div>
-          <div class="exp-period">Until Oct 2026</div>
-        </div>
-        <div class="exp-body">
-          <ul class="exp-list">
-            <li>Provided individual and group counseling to residents of a therapy and rehabilitation centre.</li>
-            <li>Offered supportive counseling and psychoeducation to help residents build coping and adjustment skills.</li>
-            <li>Worked alongside the therapy and rehabilitation team to support residents' day-to-day well-being and progress.</li>
-          </ul>
-        </div>
+    <p class="label">How I work</p>
+    <h2>My approach to care</h2>
+    <p class="intro">Grounded in supervised clinical practice, my work brings together careful assessment, evidence-based therapy and support for the people around the client.</p>
+    <div class="cards">
+      <div class="card rv">
+        <div class="ic" style="background:var(--teal-bg)"><svg viewBox="0 0 24 24" fill="none" stroke="#1d5f68" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg></div>
+        <h3>Assessment</h3>
+        <p>Clinical case history, Mental Status Examination, psychometric assessment and clear psychological reports.</p>
       </div>
-      <div class="exp-card fade">
-        <div class="exp-header">
-          <div>
-            <div class="exp-title">Clinical Psychology Intern</div>
-            <div class="exp-co">Aathma Hospital &nbsp;·&nbsp; Trichy</div>
-          </div>
-          <div class="exp-period">30 Days</div>
-        </div>
-        <div class="exp-body">
-          <ul class="exp-list">
-            <li>Conducted detailed clinical case history interviews under the supervision of a licensed clinical psychologist.</li>
-            <li>Performed Mental Status Examinations (MSE) for inpatients and documented findings accurately.</li>
-            <li>Observed psychiatric assessments, diagnostic interviews and multidisciplinary ward rounds.</li>
-            <li>Assisted in maintaining case records and preparing psychological reports.</li>
-          </ul>
-        </div>
+      <div class="card rv">
+        <div class="ic" style="background:var(--sage-bg)"><svg viewBox="0 0 24 24" fill="none" stroke="#3f7a5a" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a7 7 0 0 0-7 7c0 2.4 1.2 4.5 3 5.7V17a2 2 0 0 0 2 2h4a2 2 0 0 0 2-2v-2.3c1.8-1.2 3-3.3 3-5.7a7 7 0 0 0-7-7z"/><path d="M10 22h4"/></svg></div>
+        <h3>Therapeutic support</h3>
+        <p>CBT-informed and supportive counseling, with motivational interviewing to build readiness for change.</p>
       </div>
-      <div class="exp-card fade">
-        <div class="exp-header">
-          <div>
-            <div class="exp-title">Clinical Psychology Intern</div>
-            <div class="exp-co">Navaneeth Mental Health Clinic &amp; De-addiction Centre</div>
-          </div>
-          <div class="exp-period">15 Days</div>
-        </div>
-        <div class="exp-body">
-          <ul class="exp-list">
-            <li>Gained direct exposure to substance use disorder assessment and rehabilitation planning.</li>
-            <li>Participated in structured patient observation sessions and clinical case reviews.</li>
-            <li>Supported therapeutic activities and psychoeducation sessions for patients and their families.</li>
-          </ul>
-        </div>
+      <div class="card rv">
+        <div class="ic" style="background:var(--gold-bg)"><svg viewBox="0 0 24 24" fill="none" stroke="#8a5d12" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.9"/><path d="M16 3.1a4 4 0 0 1 0 7.8"/></svg></div>
+        <h3>Psychoeducation</h3>
+        <p>Helping patients and families understand conditions, treatment and coping — individually and in groups.</p>
+      </div>
+      <div class="card rv">
+        <div class="ic" style="background:#f6e9e5"><svg viewBox="0 0 24 24" fill="none" stroke="#b4472f" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12h4l3-9 4 18 3-9h4"/></svg></div>
+        <h3>Rehabilitation</h3>
+        <p>Supporting recovery in rehabilitation and de-addiction settings alongside multidisciplinary teams.</p>
+      </div>
+    </div>
+    <div style="margin-top:46px">
+      <p class="label">Areas of clinical interest</p>
+      <div class="focus rv">
+        <span>Mood disorders</span><span>Anxiety disorders</span><span>Substance use &amp; addiction</span>
+        <span>Neuropsychology</span><span>Child &amp; adolescent psychology</span><span>Mental health rehabilitation</span>
       </div>
     </div>
   </div>
 </section>
 
-<hr class="divider">
-
-<!-- RESEARCH -->
-<section class="section" id="research">
+<section id="experience">
   <div class="wrap">
-    <p class="sec-label">Research</p>
-    <p class="sec-title">Research Project</p>
-    <div class="research fade">
-      <div class="kicker">UG Final-Year Dissertation · B.Sc Psychology</div>
+    <p class="label">Clinical practice</p>
+    <h2>Experience &amp; internships</h2>
+    <p class="intro">Hands-on work in counseling, hospital and de-addiction settings — under the supervision of licensed professionals.</p>
+    <div class="tl">
+      <div class="ti rv">
+        <div class="ti-head">
+          <div><h3>Counselor</h3><div class="org">Smile Home Therapy and Rehab Center <span>· Coimbatore</span></div></div>
+          <span class="pill">2026 – Oct 2026</span>
+        </div>
+        <ul>
+          <li>Provided individual and group counseling to residents of a therapy and rehabilitation centre.</li>
+          <li>Offered supportive counseling and psychoeducation to help residents build coping and adjustment skills.</li>
+          <li>Worked alongside the therapy and rehabilitation team to support residents' day-to-day well-being and progress.</li>
+        </ul>
+      </div>
+      <div class="ti rv">
+        <div class="ti-head">
+          <div><h3>Clinical Psychology Intern</h3><div class="org">Navaneeth Mental Health Clinic &amp; De-addiction Centre</div></div>
+          <span class="pill">2025 · 15 days</span>
+        </div>
+        <ul>
+          <li>Gained direct exposure to substance use disorder assessment and rehabilitation planning.</li>
+          <li>Participated in structured patient observation sessions and clinical case reviews.</li>
+          <li>Supported therapeutic activities and psychoeducation sessions for patients and their families.</li>
+        </ul>
+      </div>
+      <div class="ti rv">
+        <div class="ti-head">
+          <div><h3>Clinical Psychology Intern</h3><div class="org">Aathma Hospital <span>· Trichy</span></div></div>
+          <span class="pill">2024 · 30 days</span>
+        </div>
+        <ul>
+          <li>Conducted detailed clinical case history interviews under the supervision of a licensed clinical psychologist.</li>
+          <li>Performed Mental Status Examinations (MSE) for inpatients and documented findings accurately.</li>
+          <li>Observed psychiatric assessments, diagnostic interviews and multidisciplinary ward rounds.</li>
+          <li>Assisted in maintaining case records and preparing psychological reports.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="education" class="alt">
+  <div class="wrap">
+    <p class="label">Academic background</p>
+    <h2>Education &amp; research</h2>
+    <div class="two">
+      <div class="box rv">
+        <h3>M.Sc Clinical Psychology</h3>
+        <div class="sub">Rathinam Global University, Coimbatore</div>
+        <div class="meta"><span class="tag t-teal">2025 – 2027</span><span class="tag t-gold">Pursuing</span></div>
+      </div>
+      <div class="box rv">
+        <h3>B.Sc Psychology</h3>
+        <div class="sub">Kongu Arts and Science College, Erode</div>
+        <div class="meta"><span class="tag t-teal">2022 – 2025</span><span class="tag t-gold">73%</span></div>
+      </div>
+    </div>
+    <div class="research rv">
+      <div class="k">UG final-year dissertation</div>
       <h3>Impact of Mobile Phone Usage on Academic Performance and Sleep Quality</h3>
-      <p>Designed and independently conducted a quantitative study examining the relationship between smartphone usage habits, academic outcomes and sleep health among college students. Handled questionnaire-based data collection, statistical analysis and interpretation, and presented data-driven findings — building research methodology skills that underpin evidence-based clinical practice.</p>
+      <p>A quantitative study of how smartphone habits relate to academic outcomes and sleep health among college students — covering questionnaire-based data collection, statistical analysis and interpretation.</p>
     </div>
   </div>
 </section>
 
-<hr class="divider">
-
-<!-- SKILLS -->
-<section class="section white-bg" id="skills">
+<section id="skills">
   <div class="wrap">
-    <p class="sec-label">Capabilities</p>
-    <p class="sec-title">Clinical Skills &amp; Expertise</p>
-    <div class="skills-table">
-      <div class="skill-row fade">
-        <div class="skill-cat">Assessment</div>
-        <div class="skill-tags">
-          <span class="stag">Case History Taking</span><span class="stag">Mental Status Examination</span>
-          <span class="stag">Psychometric Assessment</span><span class="stag">Clinical Observation</span>
-        </div>
-      </div>
-      <div class="skill-row fade">
-        <div class="skill-cat">Intervention</div>
-        <div class="skill-tags">
-          <span class="stag">Individual Counseling</span><span class="stag">Group Counseling</span>
-          <span class="stag">Psychoeducation</span><span class="stag">Rehabilitation Support</span>
-        </div>
-      </div>
-      <div class="skill-row fade">
-        <div class="skill-cat">Therapeutic Approaches</div>
-        <div class="skill-tags">
-          <span class="stag">CBT</span><span class="stag">Supportive Counseling</span>
-          <span class="stag">Psychoeducation-based Therapy</span><span class="stag">Motivational Interviewing</span>
-        </div>
-      </div>
-      <div class="skill-row fade">
-        <div class="skill-cat">Research &amp; Documentation</div>
-        <div class="skill-tags">
-          <span class="stag">Psychological Report Writing</span><span class="stag">Case Records</span>
-          <span class="stag">Research Design</span><span class="stag">SPSS / Statistics</span>
-        </div>
-      </div>
-      <div class="skill-row fade">
-        <div class="skill-cat">Clinical Interests</div>
-        <div class="skill-tags">
-          <span class="stag">Mood Disorders</span><span class="stag">Anxiety Disorders</span>
-          <span class="stag">Substance Use &amp; Addiction</span><span class="stag">Neuropsychology</span>
-          <span class="stag">Child &amp; Adolescent</span><span class="stag">Rehabilitation</span>
-        </div>
-      </div>
-      <div class="skill-row fade">
-        <div class="skill-cat">Languages</div>
-        <div class="skill-tags">
-          <span class="stag">Tamil — Native</span><span class="stag">English — Professional</span>
-        </div>
-      </div>
+    <p class="label">Capabilities</p>
+    <h2>Skills &amp; training</h2>
+    <p class="intro">Core clinical skills built through coursework, supervised placements and focused workshops.</p>
+    <div class="skills">
+      <div class="sk rv"><h4>Assessment</h4><ul>
+        <li>Clinical case history taking</li><li>Mental Status Examination (MSE)</li><li>Psychometric assessment</li><li>Clinical observation</li></ul></div>
+      <div class="sk rv"><h4>Intervention</h4><ul>
+        <li>Individual &amp; group counseling</li><li>Cognitive Behavioural Therapy (CBT)</li><li>Supportive counseling</li><li>Motivational interviewing</li><li>Psychoeducation</li></ul></div>
+      <div class="sk rv"><h4>Research &amp; documentation</h4><ul>
+        <li>Psychological report writing</li><li>Case record maintenance</li><li>Research design &amp; data analysis</li><li>SPSS / statistical tools</li></ul></div>
+    </div>
+    <div class="certs">
+      <div class="cert rv"><span class="n">1</span><b>Cognitive Behavioural Therapy (CBT)</b></div>
+      <div class="cert rv"><span class="n">2</span><b>Transactional Analysis</b></div>
+      <div class="cert rv"><span class="n">3</span><b>Research Methodology &amp; Statistics</b></div>
+      <div class="cert rv"><span class="n">4</span><b>Neuropsychology – "Inside the Human Mind"</b></div>
+      <div class="cert rv"><span class="n">5</span><b>Occupational Therapy</b></div>
     </div>
   </div>
 </section>
 
-<hr class="divider">
+<div class="band"><img src="assets/banner.png" alt="Listening with empathy, caring with evidence" loading="lazy"></div>
 
-<!-- CERTIFICATIONS -->
-<section class="section surface-bg">
+<section id="contact" class="contact">
   <div class="wrap">
-    <p class="sec-label">Continuing Learning</p>
-    <p class="sec-title">Workshops &amp; Certifications</p>
-    <div class="card-grid">
-      <div class="cert-card fade"><div class="kind">Therapy</div><h5>Cognitive Behavioural Therapy (CBT)</h5></div>
-      <div class="cert-card fade"><div class="kind">Therapy</div><h5>Transactional Analysis</h5></div>
-      <div class="cert-card fade"><div class="kind">Research</div><h5>Research Methodology and Statistics</h5></div>
-      <div class="cert-card fade"><div class="kind">Neuroscience</div><h5>Neuropsychology — “Inside the Human Mind: A Scientific Exploration”</h5></div>
-      <div class="cert-card fade"><div class="kind">Allied Health</div><h5>Occupational Therapy</h5></div>
+    <p class="label" style="color:#ffd9a0">Get in touch</p>
+    <h2>Let's connect</h2>
+    <p class="intro">Open to clinical psychology trainee, counselor and internship opportunities in Coimbatore, Erode or remote.</p>
+    <div class="cgrid">
+      <a class="ccard" href="mailto:poonguzhalitphychology@gmail.com"><span class="i">✉</span><div><small>Email</small><span>poonguzhalitphychology@gmail.com</span></div></a>
+      <a class="ccard" href="https://www.linkedin.com/in/poonguzhali-t-737925417/" target="_blank" rel="noopener"><span class="i">in</span><div><small>LinkedIn</small><span>poonguzhali-t-737925417</span></div></a>
+      <a class="ccard" href="Poonguzhali_T_Resume.pdf" download><span class="i">↓</span><div><small>Resume</small><span>Download PDF</span></div></a>
+      <div class="ccard"><span class="i">⌖</span><div><small>Location</small><span>Coimbatore &amp; Erode, Tamil Nadu</span></div></div>
     </div>
-  </div>
-</section>
-
-<hr class="divider">
-
-<!-- COMPETENCIES -->
-<section class="section white-bg">
-  <div class="wrap">
-    <p class="sec-label">Approach</p>
-    <p class="sec-title">Core Competencies</p>
-    <div class="comp-grid">
-      <div class="comp-card fade"><h5>Patient-Centred Care</h5><p>Empathetic, respectful engagement that puts the client's needs and wellbeing first.</p></div>
-      <div class="comp-card fade"><h5>Ethical &amp; Confidential Practice</h5><p>Careful handling of sensitive information in line with professional ethics.</p></div>
-      <div class="comp-card fade"><h5>Evidence-Based Assessment</h5><p>Structured interviews, MSE and psychometric tools grounded in research.</p></div>
-      <div class="comp-card fade"><h5>Multidisciplinary Collaboration</h5><p>Working alongside psychiatrists, psychologists and rehabilitation teams.</p></div>
-      <div class="comp-card fade"><h5>Clear Communication</h5><p>Accurate case documentation and clear psychoeducation for patients and families.</p></div>
-      <div class="comp-card fade"><h5>Calm Under Pressure</h5><p>Composed and attentive in hospital and de-addiction settings.</p></div>
-    </div>
-  </div>
-</section>
-
-<hr class="divider">
-
-<!-- EDUCATION -->
-<section class="section surface-bg" id="education">
-  <div class="wrap">
-    <p class="sec-label">Academic Background</p>
-    <p class="sec-title">Education</p>
-    <div class="edu-grid">
-      <div class="edu-card fade">
-        <div class="degree">M.Sc Clinical Psychology</div>
-        <div class="college">Rathinam Arts and Science College, Coimbatore</div>
-        <div class="edu-meta"><span class="ec ec-year">2025 – 2027</span><span class="ec ec-now">Pursuing</span></div>
-      </div>
-      <div class="edu-card fade">
-        <div class="degree">B.Sc Psychology</div>
-        <div class="college">Kongu Arts and Science College, Erode</div>
-        <div class="edu-meta"><span class="ec ec-year">2022 – 2025</span><span class="ec ec-score">73%</span></div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- CONTACT -->
-<section class="ct-bg" id="contact">
-  <div class="wrap">
-    <p class="sec-label">Get in Touch</p>
-    <p class="sec-title" style="margin-bottom:32px;">Let's Connect</p>
-    <div class="ct-grid">
-      <a href="mailto:poonguhalitpschology@gmail.com" class="ct-card">
-        <div class="ct-icon">✉</div>
-        <div><div class="ct-lbl">Email</div><div class="ct-val">poonguhalitpschology@gmail.com</div></div>
-      </a>
-      <a href="https://www.linkedin.com/in/poonguzhali-t-737925417/" target="_blank" rel="noopener" class="ct-card">
-        <div class="ct-icon" style="font-size:.8rem;font-weight:700;">in</div>
-        <div><div class="ct-lbl">LinkedIn</div><div class="ct-val">View Profile</div></div>
-      </a>
-      <a href="Poonguzhali_T_Resume.pdf" download class="ct-card">
-        <div class="ct-icon">↓</div>
-        <div><div class="ct-lbl">Resume</div><div class="ct-val">Download PDF</div></div>
-      </a>
-      <div class="ct-card">
-        <div class="ct-icon">⌖</div>
-        <div><div class="ct-lbl">Location</div><div class="ct-val">Erode, Tamil Nadu, India</div></div>
-      </div>
-    </div>
+    <p class="note">I am currently in training; all clinical work is carried out under the supervision of licensed professionals. This site does not offer clinical services. If you are in crisis, please contact Tele-MANAS on 14416 or your nearest hospital.</p>
   </div>
 </section>
 
 <footer>
-  <span class="ft">© 2026 Poonguzhali T · Clinical Psychology Trainee · Erode, Tamil Nadu</span>
-  <div class="ft-links">
-    <a href="mailto:poonguhalitpschology@gmail.com">Email</a>
-    <a href="https://www.linkedin.com/in/poonguzhali-t-737925417/" target="_blank" rel="noopener">LinkedIn</a>
-    <a href="Poonguzhali_T_Resume.pdf" download>Resume</a>
+  <div class="wrap">
+    <span>© 2026 Poonguzhali T · Clinical Psychology Trainee</span>
+    <span><a href="mailto:poonguzhalitphychology@gmail.com">Email</a><a href="https://www.linkedin.com/in/poonguzhali-t-737925417/" target="_blank" rel="noopener">LinkedIn</a><a href="Poonguzhali_T_Resume.pdf" download>Resume</a></span>
   </div>
 </footer>
 
 <script>
-window.addEventListener('scroll',()=>{
-  document.getElementById('nav').classList.toggle('shadow',window.scrollY>10);
-});
-const io=new IntersectionObserver(entries=>{
-  entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}});
-},{threshold:0.1});
-document.querySelectorAll('.fade').forEach(el=>io.observe(el));
-document.querySelectorAll('.nav-links a').forEach(a=>a.addEventListener('click',()=>document.querySelector('.nav-links').classList.remove('open')));
+const nav=document.getElementById('nav');
+addEventListener('scroll',()=>nav.classList.toggle('scrolled',scrollY>10),{passive:true});
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}}),{threshold:.12});
+document.querySelectorAll('.rv').forEach(el=>io.observe(el));
+document.querySelectorAll('.links a').forEach(a=>a.addEventListener('click',()=>document.querySelector('.links').classList.remove('open')));
 </script>
 </body>
 </html>
