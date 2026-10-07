@@ -46,6 +46,14 @@ nav.scrolled{border-color:var(--rule);box-shadow:0 2px 20px rgba(19,54,63,.05)}
 .brand{display:flex;align-items:center;gap:10px;text-decoration:none}
 .brand-mark{width:34px;height:34px;border-radius:50%;background:var(--teal);color:var(--ivory);display:grid;place-items:center;font-family:var(--serif);font-weight:700;font-size:14px}
 .brand-name{font-family:var(--serif);font-weight:600;font-size:18px}
+.brand-img{width:36px;height:36px;border-radius:50%;object-fit:cover;border:2px solid var(--teal)}
+.idcard{display:inline-flex;align-items:center;gap:16px;background:var(--white);border:1px solid var(--rule);border-radius:999px;padding:8px 22px 8px 8px;margin-bottom:22px;box-shadow:0 12px 28px -18px rgba(19,54,63,.35)}
+.idcard img{width:76px;height:76px;border-radius:50%;object-fit:cover;border:3px solid var(--white);outline:2px solid var(--teal)}
+.idcard b{display:block;font-family:var(--serif);font-size:19px;font-weight:600;line-height:1.2}
+.idcard span{display:block;font-size:13px;color:var(--ink3)}
+.idcard em{display:inline-flex;align-items:center;gap:6px;font-style:normal;font-size:12px;font-weight:600;color:var(--sage-d);margin-top:2px}
+.idcard em i{width:8px;height:8px;border-radius:50%;background:#2e9e5b;box-shadow:0 0 0 3px rgba(46,158,91,.2);animation:pulse 2.4s ease-in-out infinite}
+@media(max-width:480px){.idcard{border-radius:20px;padding-right:14px}.idcard img{width:60px;height:60px}.idcard b{font-size:17px}}
 .links{display:flex;gap:24px;align-items:center}
 .links a{text-decoration:none;font-size:14px;font-weight:500;color:var(--ink2);position:relative;transition:color .2s}
 .links a:not(.cta)::after{content:"";position:absolute;left:0;bottom:-4px;height:2px;width:0;background:var(--gold);transition:width .25s}
@@ -290,7 +298,7 @@ footer a:hover{color:#fff}
 
 <nav id="nav">
   <div class="nav-in">
-    <a class="brand" href="#top"><span class="brand-mark">PT</span><span class="brand-name">Poonguzhali T</span></a>
+    <a class="brand" href="#top"><img class="brand-img" src="assets/profile.png" alt="" width="36" height="36"><span class="brand-name">Poonguzhali T</span></a>
     <button class="burger" aria-label="Menu" onclick="document.querySelector('.links').classList.toggle('open')"><span></span><span></span><span></span></button>
     <div class="links">
       <a href="#about">About</a>
@@ -309,6 +317,14 @@ footer a:hover{color:#fff}
   <canvas id="net" aria-hidden="true"></canvas>
   <div class="wrap hero-grid">
     <div>
+      <div class="idcard">
+        <img src="assets/profile.png" alt="Poonguzhali T" width="76" height="76">
+        <div>
+          <b>Poonguzhali T</b>
+          <span>M.Sc Clinical Psychology · Rathinam Global University</span>
+          <em><i></i>Open to opportunities</em>
+        </div>
+      </div>
       <p class="eyebrow">Clinical Psychology Trainee · Counselor</p>
       <h1>Listening with empathy,<br>caring with <em>evidence</em>.</h1>
       <p class="rotator">Focused on <b id="rot">clinical assessment</b></p>
